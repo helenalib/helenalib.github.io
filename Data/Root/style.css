@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Vibur');
+@import url('https://fonts.googleapis.com/css?family=Pattaya&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
+
+/*Begin of the CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of the CSS Reset*/
+
+body {
+    background-color:lightgray;
+    background-image: url(Images/background02.jpg);
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+.book-title-eng {
+    text-align: justify;
+    font-family: 'Vibur', cursive;
+    font-size: 40px;
+    text-shadow: 6px 6px 4px rgb(145, 145, 145);
+    margin: 20px 20px;
+    border: 0px solid black;
+    padding: 0px;
+}
+
+.book-title-rus {
+    text-align: justify;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    margin: 30px 20px 20px 20px;
+    border: 0px solid black;
+    padding: 0px;
+}
+
+.eng-phrase {
+    text-align: justify;
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.audio {
+    margin: 0px 20px;
+}
+
+.rus-phrase {
+    text-align: justify;
+    font-style: italic;
+    color: black;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.page-summary-eng {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.page-summary-rus {
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.underpage-eng {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin: 10px 20px;
+}
+
+.underpage-rus {
+    text-align: center;
+    font-style: italic;
+    margin: 10px 20px;
+}
+
+.link_next_page {
+    display: block;
+    width: 66px;
+    color: black;
+    text-decoration: none;
+}
+
+.link_next_page:hover {
+    font-weight: bold;
+}
+
+.link_previous_page {
+    display: block;
+    width: 92px;
+    color: black;
+    text-decoration: none;
+}
+
+.link_previous_page:hover {
+    font-weight: bold;
+}
+
+#navigation {
+    height: 65px;
+}
+
+#navigation ul li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+#navigation ul li a {
+    color: black;
+    padding: 0 15px;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    text-decoration: none;
+    line-height: 65px;
+    display: block;
+    height: 65px;
+    z-index: 0;
+}
+
+#navigation ul li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: blue;
+    text-decoration: underline;
+}
+
+#navigation .dropdown-rus {
+    position: absolute;
+    top: 100%;
+    width: 210px;
+    background: rgb(177,193,192);
+    display: none;
+    z-index: 1;
+}
+
+#navigation li:hover .dropdown-rus {
+    display: block;
+}
+
+#navigation .dropdown-rus li {
+    width: 100%;
+    height: 45px;
+}
+
+#navigation .dropdown-rus li a {
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+#navigation .dropdown-eng {
+    position: absolute;
+    top: 100%;
+    width: 280px;
+    background: rgb(177,193,192);
+    display: none;
+    z-index: 1;
+}
+
+#navigation li:hover .dropdown-eng {
+    display: block;
+}
+
+#navigation .dropdown-eng li {
+    width: 100%;
+    height: 45px;
+}
+
+#navigation .dropdown-eng li a {
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+
+#navigation .dropdown-fr {
+    position: absolute;
+    top: 100%;
+    width: 100px;
+    background: rgb(177,193,192);
+    display: none;
+    z-index: 1;
+}
+
+#navigation li:hover .dropdown-fr {
+    display: block;
+}
+
+#navigation .dropdown-fr li {
+    width: 100%;
+    height: 45px;
+}
+
+#navigation .dropdown-fr li a {
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+#navigation .dropdown-ger {
+    position: absolute;
+    top: 100%;
+    width: 160px;
+    background: rgb(177,193,192);
+    display: none;
+    z-index: 1;
+}
+
+#navigation li:hover .dropdown-ger {
+    display: block;
+}
+
+#navigation .dropdown-ger li {
+    width: 100%;
+    height: 45px;
+}
+
+#navigation .dropdown-ger li a {
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+#header {
+    height: 136px;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.search {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+}
+
+input[type="button"] {
+    width: 61px;
+}
+
+input[type="button"]:hover {
+    font-weight: bold;
+}
+
+::selection {
+    background: grey;
+    color: yellow;
+}
+
+@media print {
+    
+    body {
+        background: white;
+    }
+    
+    #navigation,
+    .search,
+    .link,
+    .audio {
+        display: none;
+    }
+    
+    #article,
+    #underpage {
+        width: 100%;
+        float: none;
+    }
+    
+}
