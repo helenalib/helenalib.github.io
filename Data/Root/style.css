@@ -308,6 +308,12 @@ input[type="button"]:hover {
     color: yellow;
 }
 
+.page-number {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 25px;
+    font-weight: bold;    
+}
+
 @media print {
     
     body {
