@@ -153,6 +153,7 @@ body {
 
 #navigation {
     height: 65px;
+	margin: 0 10%;
 }
 
 #navigation ul li {
