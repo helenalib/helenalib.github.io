@@ -166,7 +166,7 @@ body {
 
 #navigation {
     height: 65px;
-	margin: 0 10%;
+    margin: 0 10%;
 }
 
 #navigation ul li {
@@ -182,7 +182,7 @@ body {
     font-size: 22px;
     text-align: justify;
     text-decoration: none;
-	text-shadow: 6px 6px 4px rgb(145, 145, 145);
+    text-shadow: 6px 6px 4px rgb(145, 145, 145);
     line-height: 65px;
     display: block;
     height: 65px;
