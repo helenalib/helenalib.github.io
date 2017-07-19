@@ -79,6 +79,15 @@ body {
     padding: 0px;
 }
 
+#author-page-text {
+    text-align: justify;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    margin: 30px 20px 20px 20px;
+    border: 0px solid black;
+    padding: 0px;
+}
+
 .eng-phrase {
     text-align: justify;
     font-weight: bold;
